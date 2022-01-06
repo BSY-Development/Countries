@@ -1,0 +1,32 @@
+.navbar-css {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+
+.navbar-txt {
+  margin: 0;
+}
+
+.dark-btn {
+  align-items: center;
+  background-color: inherit;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.moon-css {
+  margin-right: 10px;
+  width: 25px;
+}
+
+.dark-mode-bg1 {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+}
+
+.dark-mode-moon {
+  filter: invert(1);
+}
