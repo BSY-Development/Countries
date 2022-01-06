@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 import MyContext from '../context/context';
 
 function Provider({ children }) {
+  const isDarkMode = localStorage.getItem('darkMode') === 'true';
   const [data, setData] = useState([]);
+  const [darkMode, setDarkMode] = useState(isDarkMode);
   useEffect(() => {
     const response = async () => {
       // https://restcountries.com/v2/name/{name}
@@ -14,7 +16,7 @@ function Provider({ children }) {
     response();
   }, []);
 
-  const contextValue = { data };
+  const contextValue = { data,  darkMode, setDarkMode };
   return (
     <MyContext.Provider value={ contextValue }>
       { children }
