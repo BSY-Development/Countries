@@ -29,7 +29,7 @@ function Content() {
     <div className={`bg-content ${ isDarkMode && 'dark-mode-bg2' }`}>
       <Filters />
       <div className="container-cards">
-        { filterByRegion(data, filtered).map((item) => <Card country={ item } />) }
+        { filterByRegion(data, filtered).map((item, i) => <Card country={ item } key={ i } />) }
       </div>
     </div>
   );

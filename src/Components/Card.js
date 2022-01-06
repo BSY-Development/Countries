@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import MyContext from '../context/context';
 import '../Styles/card.css';
 
@@ -6,7 +7,7 @@ function Card({ country }) {
   const { darkMode } = useContext(MyContext);
   const { name, population, region, capital, flag } = country;
   return (
-    <div className={ `card-border ${ darkMode && 'black-card' }` }>
+    <Link className={ `card-border link-css ${ darkMode && 'black-card' }` } to={ `/${ name }` }>
       <div>
         <img className='img-card' src={ flag } alt={ name } />
       </div>
@@ -18,7 +19,7 @@ function Card({ country }) {
           <p className='small'><strong>Capital:</strong> <em>{ capital }</em> </p>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 

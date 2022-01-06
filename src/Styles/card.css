@@ -24,3 +24,8 @@
 .black-card {
   background-color: hsl(209, 23%, 22%);
 }
+
+.link-css {
+  color: inherit;
+  text-decoration: none;
+}

@@ -1,12 +1,15 @@
-import Navbar from "./Components/Navbar";
-import Content from "./Components/Content";
+import { Routes, Route } from 'react-router-dom';
+import Main from './pages/Main';
+import CountryInfo from './pages/CountryInfo';
 import Provider from "./provider/Provider";
 
 function App() {
   return (
     <Provider>
-      <Navbar />
-      <Content />
+      <Routes>
+        <Route exact path="/" element={ <Main /> } />
+        <Route exact path="/:country" element={ <CountryInfo /> } />
+      </Routes>
     </Provider>
   );
 }
