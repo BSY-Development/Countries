@@ -1,0 +1,27 @@
+.input-style {
+  background: url('../images/search-outline.svg') no-repeat 30px;
+  background-color: white;
+  background-size: 20px;
+  border: none;
+  box-shadow: 0 0 1em gold;
+  padding: 12px 70px;
+}
+
+.option-style {
+  background-color: white;
+  border: none;
+  box-shadow: 0 0 1em gold;
+  padding: 12px 20px;
+}
+
+.filter-div {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 35px 0;
+}
+
+.dark-filter {
+  background-color: hsl(209, 23%, 22%);
+  box-shadow: 0 0 0.1em black;
+  color: white;
+}
