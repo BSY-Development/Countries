@@ -3,6 +3,7 @@
   background-color: white;
   background-size: 20px;
   border: none;
+  border-radius: 5px;
   box-shadow: 0 0 1em gold;
   padding: 12px 70px;
 }
@@ -10,6 +11,7 @@
 .option-style {
   background-color: white;
   border: none;
+  border-radius: 5px;
   box-shadow: 0 0 1em gold;
   padding: 12px 20px;
 }
