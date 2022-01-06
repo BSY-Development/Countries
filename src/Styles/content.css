@@ -1,5 +1,6 @@
 .bg-content {
   background-color: hsl(0, 0%, 98%);
+  min-height: 100vh;
 }
 
 .dark-mode-bg2 {
