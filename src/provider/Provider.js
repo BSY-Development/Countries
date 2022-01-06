@@ -4,12 +4,11 @@ import MyContext from '../context/context';
 
 function Provider({ children }) {
   const [data, setData] = useState([]);
-
   useEffect(() => {
     const response = async () => {
       // https://restcountries.com/v2/name/{name}
       const api = 'https://restcountries.com/v2/all';
-      const { results } = await fetch(api).then((result) => result.json());
+      const results = await fetch(api).then((result) => result.json());
       setData(results);
     };
     response();
